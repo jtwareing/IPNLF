@@ -25,7 +25,8 @@ For an improved test without changing the before version, create a separate Netl
 5. Merge the approved branch into `main`.
 6. Let Netlify deploy the approved commit, retaining the previous deploy for rollback.
 
-## Current architectural limitation
+## Architecture by branch
 
-This supplied prototype uses a custom browser runtime and downloads React and Babel from unpkg.com, plus fonts from Google Fonts. Those services are external dependencies. For a repeatable production workflow, the preferred next step is pre-rendered HTML and CSS with only the JavaScript genuinely required by the page.
+The `viability/mobile-safety-metadata` branch preserves the supplied prototype architecture. It uses a custom browser runtime and downloads React and Babel from unpkg.com, plus fonts from Google Fonts.
 
+The `viability/static-html-brand-audit` branch removes that limitation. It replaces the browser runtime with static HTML and CSS, self-hosts the open-licensed fonts, adds a stricter security policy, and includes a dated practical audit of the visual language observed on IPNLF.org.

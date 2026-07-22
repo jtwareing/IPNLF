@@ -39,7 +39,9 @@ Before repeating the method, the most economical governance step would be to ask
 
 ## Remaining risks and recommended direction
 
-The supplied prototype currently runs a custom page system and downloads React and Babel from unpkg.com in every visitor's browser; it also loads fonts from Google Fonts. If a third-party service is blocked, slow or changed, the page may fail or render poorly. A strict Content Security Policy cannot yet be added without first removing or explicitly accommodating these dependencies.
+The supplied prototype on the earlier improvement branch runs a custom page system and downloads React and Babel from unpkg.com in every visitor's browser; it also loads fonts from Google Fonts. If a third-party service is blocked, slow or changed, the page may fail or render poorly.
+
+The later `viability/static-html-brand-audit` branch resolves this limitation: it uses pre-rendered HTML and CSS, self-hosts the open-licensed font files, retains only a small mobile-menu script and adds a strict Content Security Policy. The branches remain separate so the architectural versions can be compared before adoption.
 
 For a temporary review link, this is acceptable if the limitation is understood. For a repeatable production approach, normal pre-rendered HTML and CSS with a small amount of JavaScript only where needed would be more reliable, secure, searchable and maintainable. It would also reduce dependencies and future support costs.
 
