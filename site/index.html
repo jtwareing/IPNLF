@@ -1,100 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IPNLF Membership | Test page</title>
-<meta name="description" content="A test page exploring how IPNLF membership content could be presented online.">
-<meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="theme-color" content="#0c465b">
-<meta property="og:title" content="IPNLF Membership | Test page">
-<meta property="og:description" content="A test page exploring how IPNLF membership content could be presented online.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="icon" type="image/png" href="assets/logos/ipnlf-logo-color.png">
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPNLF Membership | Test page</title>
+  <meta name="description" content="A test page exploring how IPNLF membership content could be presented online.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#103649">
+  <meta property="og:title" content="IPNLF Membership | Test page">
+  <meta property="og:description" content="A test page exploring how IPNLF membership content could be presented online.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="assets/logos/ipnlf-logo-color.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<x-dc>
-<helmet>
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/tokens/fonts.css">
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/tokens/colors.css">
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/tokens/typography.css">
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/tokens/spacing.css">
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/tokens/base.css">
-  <link rel="stylesheet" href="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/styles.css">
-  <script src="_ds/ipnlf-design-system-3c2b4ed7-8abd-4006-8f40-b3338851dd81/_ds_bundle.js"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--ipnlf-white); }
-    a { text-decoration: none; }
-    .ipnlf-navlink { color: rgba(255,255,255,0.86); font-family: var(--font-text); font-weight: 600; font-size: 15px; letter-spacing: 0.01em; transition: color 140ms ease; }
-    .ipnlf-navlink:hover { color: #fff; }
-    .ipnlf-partner { filter: grayscale(1); opacity: 0.55; transition: filter 200ms ease, opacity 200ms ease; }
-    .ipnlf-partner:hover { filter: grayscale(0); opacity: 1; }
-    .ipnlf-logo-colour, .ipnlf-mobile-nav { display: none; }
-    .ipnlf-mobile-nav summary { list-style: none; }
-    .ipnlf-mobile-nav summary::-webkit-details-marker { display: none; }
-    .ipnlf-menu-icon { display: grid; gap: 4px; }
-    .ipnlf-menu-icon span { display: block; width: 22px; height: 2px; background: var(--ipnlf-deep); }
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    @media (max-width: 900px) {
-      .ipnlf-site-header { position: relative !important; padding: 14px 20px !important; background: #fff; border-bottom: 4px solid var(--ipnlf-gold); }
-      .ipnlf-logo-white, .ipnlf-desktop-nav { display: none !important; }
-      .ipnlf-logo-colour { display: block; height: 42px !important; }
-      .ipnlf-mobile-nav { display: block; position: relative; }
-      .ipnlf-mobile-nav > summary { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 4px; cursor: pointer; color: var(--ipnlf-deep); font-family: var(--font-text); font-weight: 700; }
-      .ipnlf-mobile-panel { position: absolute; right: 0; top: calc(100% + 14px); width: min(290px, calc(100vw - 40px)); padding: 10px 20px; background: #fff; border-bottom: 4px solid var(--ipnlf-gold); box-shadow: 0 12px 28px rgba(8,49,63,0.2); }
-      .ipnlf-mobile-panel a { display: block; padding: 13px 0; color: var(--ipnlf-deep); font-family: var(--font-text); font-weight: 700; border-bottom: 1px solid var(--ipnlf-mist); }
-      .ipnlf-mobile-panel a:last-child { border-bottom: 0; color: #8a5d00; }
-      .ipnlf-hero-content { padding: 96px 28px 72px !important; }
-      .ipnlf-split-hero { grid-template-columns: 1fr !important; }
-      .ipnlf-split-copy { padding: 76px 28px 60px !important; max-width: none !important; }
-      .ipnlf-section { padding: 76px 28px !important; }
-      .ipnlf-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-      .ipnlf-quotes-grid { grid-template-columns: 1fr !important; }
-      .ipnlf-featured-quote { padding: 44px !important; }
-      .ipnlf-footer, .ipnlf-cta-content { padding-left: 28px !important; padding-right: 28px !important; }
-    }
-
-    @media (max-width: 640px) {
-      .ipnlf-hero-content { padding: 76px 20px 60px !important; }
-      .ipnlf-hero-content h1 { font-size: clamp(39px, 12vw, 58px) !important; line-height: 0.94 !important; }
-      .ipnlf-hero-content p { font-size: 17px !important; }
-      .ipnlf-section { padding: 60px 20px !important; }
-      .ipnlf-stats-grid, .ipnlf-benefits-grid { grid-template-columns: 1fr !important; }
-      .ipnlf-stats-grid { gap: 0 !important; }
-      .ipnlf-stats-grid > * { padding: 22px 0 !important; border-left: 0 !important; border-bottom: 1.5px solid var(--ipnlf-mist); }
-      .ipnlf-stats-grid > *:last-child { border-bottom: 0; }
-      .ipnlf-partners-row { gap: 28px !important; }
-      .ipnlf-partners-row img { max-width: 125px !important; max-height: 42px !important; }
-      .ipnlf-featured-quote { padding: 32px 24px !important; }
-      .ipnlf-featured-attribution { flex-direction: column; align-items: flex-start !important; }
-      .ipnlf-cta-content { padding: 64px 20px !important; }
-      .ipnlf-footer { padding: 44px 20px !important; }
-      .ipnlf-footer-inner { align-items: flex-start !important; }
-    }
-  </style>
-</helmet>
-
-<div style="font-family: var(--font-text); color: var(--text-body);">
-
-  <!-- ============ HEADER ============ -->
-  <header class="ipnlf-site-header" style="position: absolute; top: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 24px 40px; gap: 24px;">
-    <a href="https://ipnlf.org/" aria-label="IPNLF home" style="display: flex; align-items: center;">
-      <img class="ipnlf-logo-white" src="assets/logos/ipnlf-logo-white.png" alt="IPNLF" style="height: 46px; width: auto; display: block;">
-      <img class="ipnlf-logo-colour" src="assets/logos/ipnlf-logo-color.png" alt="IPNLF" style="height: 46px; width: auto;">
+  <header class="site-header">
+    <a class="brand" href="https://ipnlf.org/" aria-label="IPNLF home">
+      <img class="brand-white" src="assets/logos/ipnlf-logo-white.png" alt="IPNLF">
+      <img class="brand-colour" src="assets/logos/ipnlf-logo-color.png" alt="IPNLF">
     </a>
-    <nav class="ipnlf-desktop-nav" aria-label="Page sections" style="display: flex; align-items: center; gap: 32px;">
-      <a class="ipnlf-navlink" href="#work">Our work</a>
-      <a class="ipnlf-navlink" href="#benefits">Benefits</a>
-      <a class="ipnlf-navlink" href="#members">Members</a>
-      <a class="ipnlf-navlink" href="#voices">Voices</a>
-      <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.Button" variant="accent" size="md" pill="{{ true }}" onClick="{{ goJoin }}" hint-size="auto,44px">Find out more</x-import>
+
+    <nav class="desktop-nav" aria-label="Page sections">
+      <a href="#work">Our work</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#members">Members</a>
+      <a href="#voices">Voices</a>
+      <a class="button button-gold button-small" href="#join">Find out more</a>
     </nav>
-    <details class="ipnlf-mobile-nav">
-      <summary><span class="ipnlf-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>Menu</summary>
-      <nav class="ipnlf-mobile-panel" aria-label="Mobile page sections">
+
+    <details class="mobile-nav">
+      <summary aria-label="Open page menu"><span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="sr-only">Menu</span></summary>
+      <nav class="mobile-panel" aria-label="Mobile page sections">
         <a href="#work">Our work</a>
         <a href="#benefits">Benefits</a>
         <a href="#members">Members</a>
@@ -104,210 +44,114 @@
     </details>
   </header>
 
-  <!-- ============ HERO: IMMERSIVE ============ -->
-  <sc-if value="{{ isImmersive }}" hint-placeholder-val="{{ true }}">
-    <section id="top" style="position: relative; min-height: 92vh; display: flex; align-items: center; background: var(--ipnlf-deep); overflow: hidden;">
-      <img ref="{{ setHero }}" alt="A one-by-one fisher at work on the open ocean" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% center;">
-      <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(12,70,91,0.95) 0%, rgba(12,70,91,0.82) 38%, rgba(12,70,91,0.30) 72%, rgba(12,70,91,0.05) 100%);"></div>
-      <div class="ipnlf-hero-content" style="position: relative; z-index: 2; max-width: 1200px; width: 100%; margin: 0 auto; padding: 150px 40px 90px;">
-        <div style="max-width: 760px;">
-          <div style="font-family: var(--font-text); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ipnlf-gold); margin-bottom: 20px;">Membership · One fish at a time</div>
-          <h1 style="font-family: var(--font-display); font-weight: 400; font-size: clamp(52px, 7.5vw, 104px); line-height: 0.9; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin: 0; max-width: 15ch; font-size: clamp(46px, 6vw, 90px);">Join the leading movement championing sustainable seafood</h1>
-          <p style="font-family: var(--font-text); font-size: 19px; line-height: 1.6; color: var(--text-on-dark-soft); margin: 28px 0 0; max-width: 54ch; text-wrap: pretty;">One-by-one tuna fishing protects fish populations and coastal livelihoods and keeps ocean ecosystems healthy. Joining IPNLF connects you to the markets, tools, and a community supporting fishers and leading the change.</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px;">
-            <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.Button" variant="accent" size="lg" pill="{{ true }}" onClick="{{ goJoin }}" hint-size="auto,56px">Find out more</x-import>
-            <a href="#benefits" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-text); font-weight: 700; font-size: 17px; color: #fff; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 999px; padding: 16px 32px;">See member benefits</a>
-          </div>
+  <main id="main">
+    <section class="hero" id="top">
+      <img class="hero-image" src="assets/photos/fisher-line.jpg" alt="A one-by-one fisher at work on the open ocean">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Membership · One fish at a time</p>
+        <h1>Join the leading movement championing sustainable seafood</h1>
+        <p class="hero-intro">One-by-one tuna fishing protects fish populations and coastal livelihoods and keeps ocean ecosystems healthy. Joining IPNLF connects you to the markets, tools, and a community supporting fishers and leading the change.</p>
+        <div class="button-row">
+          <a class="button button-gold" href="#join">Find out more</a>
+          <a class="button button-outline" href="#benefits">See member benefits</a>
         </div>
       </div>
     </section>
-  </sc-if>
 
-  <!-- ============ HERO: SPLIT ============ -->
-  <sc-if value="{{ isSplit }}" hint-placeholder-val="{{ false }}">
-    <section class="ipnlf-split-hero" id="top" style="display: grid; grid-template-columns: 1.05fr 0.95fr; min-height: 92vh; background: var(--ipnlf-deep);">
-      <div class="ipnlf-split-copy" style="display: flex; flex-direction: column; justify-content: center; padding: 150px 64px 90px; max-width: 720px;">
-        <div style="font-family: var(--font-text); font-weight: 700; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ipnlf-gold); margin-bottom: 20px;">Membership · One fish at a time</div>
-        <h1 style="font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 5.6vw, 88px); line-height: 0.9; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin: 0;">Join the leading movement championing sustainable seafood</h1>
-        <p style="font-family: var(--font-text); font-size: 19px; line-height: 1.6; color: var(--text-on-dark-soft); margin: 28px 0 0; max-width: 52ch; text-wrap: pretty;">One-by-one tuna fishing protects fish populations and coastal livelihoods and keeps ocean ecosystems healthy. Joining IPNLF connects you to the markets, tools, and a community supporting fishers and leading the change.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px;">
-          <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.Button" variant="accent" size="lg" pill="{{ true }}" onClick="{{ goJoin }}" hint-size="auto,56px">Find out more</x-import>
-          <a href="#benefits" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-text); font-weight: 700; font-size: 17px; color: #fff; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 999px; padding: 16px 32px;">See member benefits</a>
-        </div>
-      </div>
-      <div style="position: relative; min-height: 420px; background: var(--ipnlf-deep);">
-        <img ref="{{ setHero }}" alt="A one-by-one fisher at work on the open ocean" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
-        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,70,91,0.55) 0%, rgba(12,70,91,0) 35%);"></div>
+    <section class="section stats-section" aria-label="Membership statistics">
+      <div class="stats-grid container-narrow">
+        <div class="stat"><strong>60+</strong><span>active members around the world</span></div>
+        <div class="stat"><strong>87%</strong><span>of the world's oceans represented</span></div>
+        <div class="stat"><strong>11</strong><span>SDGs driving our work</span></div>
       </div>
     </section>
-  </sc-if>
 
-  <!-- ============ STATS BAND ============ -->
-  <section class="ipnlf-section" style="background: var(--ipnlf-foam); padding: 72px 40px;">
-    <div class="ipnlf-stats-grid" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: start;">
-      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="3">
-        <div style="text-align: center; padding: 0 12px; border-left: 1.5px solid var(--ipnlf-mist);">
-          <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.StatBlock" value="{{ s.value }}" label="{{ s.label }}" tone="{{ s.tone }}" align="center" hint-size="auto,140px"></x-import>
+    <section class="section work-section" id="work">
+      <div class="container-narrow centre">
+        <p class="eyebrow">One movement, practical action</p>
+        <h2>What we work on together</h2>
+        <p class="section-intro light">IPNLF brings members, fisheries and technical expertise together around the issues that determine the future of one-by-one tuna.</p>
+        <ul class="tag-list" aria-label="IPNLF work areas">
+          <li>Innovation</li><li>Modernisation</li><li>Market Education</li><li>Upskilling</li><li>Policy &amp; Advocacy</li>
+          <li>Social Responsibility</li><li>Quality Improvement</li><li>Decarbonisation</li><li>Pilot Projects</li><li>Mobilising Capital</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="container-narrow">
+        <div class="section-heading">
+          <p class="eyebrow dark">What you get</p>
+          <h2>Membership benefits</h2>
+          <p class="section-intro">Practical support and shared influence—the things that move responsible sourcing forward.</p>
         </div>
-      </sc-for>
-    </div>
-  </section>
-
-  <!-- ============ OUR WORK ============ -->
-  <section class="ipnlf-section" id="work" style="position: relative; background: var(--ipnlf-deep); padding: 104px 40px; overflow: hidden;">
-    <img src="assets/icons/tuna.png" alt="" aria-hidden="true" style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); width: 520px; opacity: 0.06; pointer-events: none;">
-    <div style="position: relative; max-width: 1100px; margin: 0 auto;">
-      <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.SectionHeader" eyebrow="What we do" title="Our work includes" intro="From the dock to the boardroom, we drive change across the value chain — backed by science, policy, and a global community of members." on-dark="{{ true }}" hint-size="100%,auto"></x-import>
-      <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 44px;">
-        <sc-for list="{{ workAreas }}" as="w" hint-placeholder-count="10">
-          <span style="display: inline-flex; align-items: center; font-family: var(--font-text); font-weight: 600; font-size: 16px; color: #fff; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 13px 24px;">{{ w }}</span>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ BENEFITS ============ -->
-  <section class="ipnlf-section" id="benefits" style="background: var(--ipnlf-white); padding: 104px 40px;">
-    <div style="max-width: 1100px; margin: 0 auto;">
-      <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.SectionHeader" eyebrow="What you get" title="Membership benefits" intro="Practical support and shared influence — the things that move responsible sourcing forward." hint-size="100%,auto"></x-import>
-      <div class="ipnlf-benefits-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;">
-        <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="6">
-          <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.ValueCard" icon="{{ b.icon }}" icon-tone="{{ b.tone }}" title="{{ b.title }}" variant="soft" style="{{ cardFill }}" hint-size="100%,200px">{{ b.body }}</x-import>
-        </sc-for>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TRUSTED BY ============ -->
-  <section class="ipnlf-section" id="members" style="background: var(--ipnlf-foam); padding: 88px 40px;">
-    <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
-      <div style="font-family: var(--font-text); font-weight: 700; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 40px;">Trusted worldwide by</div>
-      <div class="ipnlf-partners-row" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 56px;">
-        <sc-for list="{{ partners }}" as="p" hint-placeholder-count="4">
-          <img class="ipnlf-partner" data-src="{{ p.src }}" ref="{{ applySrc }}" alt="{{ p.name }}" style="height: 52px; width: auto; object-fit: contain;">
-        </sc-for>
-        <span style="font-family: var(--font-display); font-weight: 400; font-size: 38px; letter-spacing: 0.02em; color: var(--ipnlf-slate); opacity: 0.55;">WOOLWORTHS</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="ipnlf-section" id="voices" style="background: var(--ipnlf-white); padding: 104px 40px;">
-    <div style="max-width: 1100px; margin: 0 auto;">
-      <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.SectionHeader" eyebrow="In their words" title="Why members join us" align="center" hint-size="100%,auto"></x-import>
-
-      <!-- featured -->
-      <div class="ipnlf-featured-quote" style="position: relative; margin-top: 52px; background: var(--ipnlf-deep); border-radius: 18px; padding: 56px 56px 48px; overflow: hidden;">
-        <div style="font-family: var(--font-display); font-size: 140px; line-height: 0.6; color: var(--ipnlf-gold); opacity: 0.5; height: 56px;">&ldquo;</div>
-        <blockquote style="margin: 0; font-family: var(--font-text); font-size: 24px; line-height: 1.55; color: #fff; max-width: 60ch; text-wrap: pretty;">Joining IPNLF amplifies our collective efforts to be a positive force for change for our oceans and the fishing communities who depend on them. IPNLF has been a key partner, helping us develop our canned tuna sourcing policy, and supporting Whole Foods Market&rsquo;s mission to move the seafood industry toward greater sustainability.</blockquote>
-        <div class="ipnlf-featured-attribution" style="display: flex; align-items: center; gap: 20px; margin-top: 32px;">
-          <img src="assets/partners/whole-foods.png" alt="Whole Foods Market" style="height: 44px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.9;">
-          <div style="border-left: 1.5px solid rgba(255,255,255,0.25); padding-left: 20px;">
-            <div style="font-family: var(--font-text); font-weight: 700; font-size: 16px; color: #fff;">Carrie Brownstein</div>
-            <div style="font-family: var(--font-text); font-size: 14px; color: var(--text-on-dark-soft);">Principal Quality Standards Advisor for Seafood, Whole Foods Market</div>
-          </div>
+        <div class="benefits-grid">
+          <article class="benefit-card"><img src="assets/icons/growth.png" alt=""><h3>Sustainability leadership</h3><p>Show your support for responsible sourcing.</p></article>
+          <article class="benefit-card"><img src="assets/icons/handshake.png" alt=""><h3>Expert network</h3><p>Access to fisheries specialists and in-country consultants.</p></article>
+          <article class="benefit-card"><img src="assets/icons/lightbulb-brain.png" alt=""><h3>Policy insights</h3><p>Updates from key ocean policy meetings.</p></article>
+          <article class="benefit-card"><img src="assets/icons/hands-heart.png" alt=""><h3>Collective advocacy</h3><p>Amplify your impact through collective action.</p></article>
+          <article class="benefit-card"><img src="assets/icons/tuna.png" alt=""><h3>Industry guides</h3><p>Buying guides incorporating the latest science and regulation.</p></article>
+          <article class="benefit-card"><img src="assets/icons/turtle.png" alt=""><h3>Events</h3><p>Networking events and learning opportunities.</p></article>
         </div>
       </div>
+    </section>
 
-      <!-- supporting grid -->
-      <div class="ipnlf-quotes-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 24px;">
-        <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="3">
-          <figure style="display: flex; flex-direction: column; margin: 0; background: var(--ipnlf-foam); border-radius: 18px; padding: 36px 32px; box-shadow: var(--shadow-sm);">
-            <div style="font-family: var(--font-display); font-size: 64px; line-height: 0.5; color: var(--ipnlf-teal); height: 30px;">&ldquo;</div>
-            <blockquote style="margin: 0 0 24px; font-family: var(--font-text); font-size: 16px; line-height: 1.6; color: var(--text-body); text-wrap: pretty; flex: 1;">{{ q.quote }}</blockquote>
-            <figcaption style="display: flex; align-items: center; gap: 14px; border-top: 1.5px solid var(--ipnlf-mist); padding-top: 18px;">
-              <sc-if value="{{ q.logo }}" hint-placeholder-val="{{ false }}">
-                <img data-src="{{ q.logo }}" ref="{{ applySrc }}" alt="{{ q.org }}" style="height: 28px; width: auto; max-width: 90px; object-fit: contain;">
-              </sc-if>
-              <div>
-                <div style="font-family: var(--font-text); font-weight: 700; font-size: 15px; color: var(--text-strong);">{{ q.name }}</div>
-                <div style="font-family: var(--font-text); font-size: 13px; line-height: 1.4; color: var(--text-muted);">{{ q.role }}</div>
-              </div>
-            </figcaption>
-          </figure>
-        </sc-for>
+    <section class="section partners-section" id="members">
+      <div class="container-narrow centre">
+        <p class="trust-label">Trusted worldwide by</p>
+        <div class="partners-row">
+          <img src="assets/partners/marks-spencer.png" alt="M&amp;S">
+          <img src="assets/partners/whole-foods.png" alt="Whole Foods Market">
+          <img src="assets/partners/sainsburys.png" alt="Sainsbury's">
+          <img src="assets/partners/edeka.png" alt="EDEKA">
+          <span>Woolworths</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FINAL CTA ============ -->
-  <section id="join" style="position: relative; overflow: hidden; background: var(--ipnlf-deep);">
-    <img src="assets/photos/ocean-sunset.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45;">
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,70,91,0.85), rgba(12,70,91,0.92));"></div>
-    <div class="ipnlf-cta-content" style="position: relative; max-width: 860px; margin: 0 auto; padding: 112px 40px; text-align: center;">
-      <h2 style="font-family: var(--font-display); font-weight: 400; font-size: clamp(40px, 5.5vw, 76px); line-height: 0.94; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin: 0;">Ready to lead the change?</h2>
-      <p style="font-family: var(--font-text); font-size: 19px; line-height: 1.6; color: var(--text-on-dark-soft); margin: 24px auto 0; max-width: 52ch; text-wrap: pretty;">Become part of a global network protecting one-by-one fisheries and the communities that depend on them.</p>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 40px;">
-        <x-import component-from-global-scope="IPNLFDesignSystem_3c2b4e.Button" variant="accent" size="lg" pill="{{ true }}" onClick="{{ goContact }}" hint-size="auto,56px">Contact membership team</x-import>
-        <a href="mailto:members@ipnlf.org" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-text); font-weight: 700; font-size: 17px; color: #fff; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 999px; padding: 16px 32px;">members@ipnlf.org</a>
+    <section class="section" id="voices">
+      <div class="container-narrow">
+        <div class="section-heading centre">
+          <p class="eyebrow dark">In their words</p>
+          <h2>Why members join us</h2>
+        </div>
+
+        <figure class="featured-quote">
+          <blockquote>Joining IPNLF amplifies our collective efforts to be a positive force for change for our oceans and the fishing communities who depend on them. IPNLF has been a key partner, helping us develop our canned tuna sourcing policy, and supporting Whole Foods Market’s mission to move the seafood industry toward greater sustainability.</blockquote>
+          <figcaption>
+            <img src="assets/partners/whole-foods.png" alt="Whole Foods Market">
+            <span><strong>Carrie Brownstein</strong>Principal Quality Standards Advisor for Seafood, Whole Foods Market</span>
+          </figcaption>
+        </figure>
+
+        <div class="quotes-grid">
+          <figure class="quote-card"><blockquote>We're incredibly happy to work with IPNLF to have access to their expertise as well as being part of the global IPNLF business network, which enables us to expand our reach.</blockquote><figcaption><strong>William Gertler</strong><span>Co-Founder, Kumbatia Seafood</span></figcaption></figure>
+          <figure class="quote-card"><blockquote>Our IPNLF Membership underlines our commitment to safeguarding one-by-one tuna fisheries and the communities they support, and we look forward to contributing to the organisation’s essential work in this space.</blockquote><figcaption><strong>Michael Berkowitz</strong><span>CEO, Seaford Imports Inc.</span></figcaption></figure>
+          <figure class="quote-card"><blockquote>EDEKA's IPNLF membership represents a further step in our commitment to protecting the oceans and fish stocks, and to promoting responsible tuna fishing—because pole-and-line fishing is one of the most sustainable methods.</blockquote><figcaption><img src="assets/partners/edeka.png" alt="EDEKA"><span><strong>Rolf Lange</strong>Senior VP, EDEKA Headquarters</span></figcaption></figure>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="ipnlf-footer" style="background: #08313F; padding: 56px 40px;">
-    <div class="ipnlf-footer-inner" style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px;">
-      <a href="https://ipnlf.org/" aria-label="IPNLF home"><img src="assets/logos/ipnlf-logo-white.png" alt="IPNLF" style="height: 44px; width: auto;"></a>
-      <div style="font-family: var(--font-text); font-size: 14px; line-height: 1.6; color: var(--text-on-dark-soft); max-width: 44ch;">International Pole &amp; Line Foundation — powering responsible fisheries and the people that depend on them. UK registered charity no. 1145586.</div>
+    <section class="final-cta" id="join">
+      <img src="assets/photos/ocean-sunset.jpg" alt="">
+      <div class="final-overlay"></div>
+      <div class="cta-content">
+        <h2>Ready to lead the change?</h2>
+        <p>Become part of a global network protecting one-by-one fisheries and the communities that depend on them.</p>
+        <div class="button-row centred">
+          <a class="button button-gold" href="mailto:members@ipnlf.org">Contact membership team</a>
+          <a class="button button-outline" href="mailto:members@ipnlf.org">members@ipnlf.org</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container-narrow">
+      <a href="https://ipnlf.org/" aria-label="IPNLF home"><img src="assets/logos/ipnlf-logo-white.png" alt="IPNLF"></a>
+      <p>International Pole &amp; Line Foundation—powering responsible fisheries and the people that depend on them. UK registered charity no. 1145586.</p>
     </div>
   </footer>
-
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1200, &quot;height&quot;: 3400}, &quot;heroVariant&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;immersive&quot;, &quot;split&quot;], &quot;default&quot;: &quot;immersive&quot;, &quot;tsType&quot;: &quot;string&quot;}, &quot;heroPhoto&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;fisher-line&quot;, &quot;hands-line&quot;, &quot;boat-aerial&quot;], &quot;default&quot;: &quot;fisher-line&quot;, &quot;tsType&quot;: &quot;string&quot;}}">
-class Component extends DCLogic {
-  goJoin = () => { window.location.hash = '#join'; };
-  goContact = () => { window.location.href = 'mailto:members@ipnlf.org'; };
-
-  renderVals() {
-    const variant = this.props.heroVariant ?? 'immersive';
-    const photo = this.props.heroPhoto ?? 'fisher-line';
-    const heroSrc = 'assets/photos/' + photo + '.jpg';
-    return {
-      isImmersive: variant === 'immersive',
-      isSplit: variant === 'split',
-      setHero: (el) => { if (el && el.getAttribute('src') !== heroSrc) el.src = heroSrc; },
-      applySrc: (el) => { if (el) { const v = el.getAttribute('data-src'); if (v && el.getAttribute('src') !== v) el.src = v; } },
-      goJoin: this.goJoin,
-      goContact: this.goContact,
-      cardFill: { height: '100%' },
-      stats: [
-        { value: '60+', label: 'active members around the world', tone: 'deep' },
-        { value: '87%', label: "of the world's oceans represented", tone: 'teal' },
-        { value: '11', label: 'SDGs driving our work', tone: 'orange' },
-      ],
-      workAreas: [
-        'Innovation', 'Modernisation', 'Market Education', 'Upskilling', 'Policy & Advocacy',
-        'Social Responsibility', 'Quality Improvement', 'Decarbonisation', 'Pilot Projects', 'Mobilising Capital',
-      ],
-      benefits: [
-        { icon: 'assets/icons/growth.png', tone: 'teal', title: 'Sustainability leadership', body: 'Show your support for responsible sourcing.' },
-        { icon: 'assets/icons/handshake.png', tone: 'ocean', title: 'Expert network', body: 'Access to fisheries specialists and in-country consultants.' },
-        { icon: 'assets/icons/lightbulb-brain.png', tone: 'orange', title: 'Policy insights', body: 'Updates from key ocean policy meetings.' },
-        { icon: 'assets/icons/hands-heart.png', tone: 'deep', title: 'Collective advocacy', body: 'Amplify your impact through collective action.' },
-        { icon: 'assets/icons/tuna.png', tone: 'teal', title: 'Industry guides', body: 'Buying guides incorporating the latest science and regulation.' },
-        { icon: 'assets/icons/turtle.png', tone: 'ocean', title: 'Events', body: 'Networking events and learning opportunities.' },
-      ],
-      partners: [
-        { src: 'assets/partners/marks-spencer.png', name: 'M&S' },
-        { src: 'assets/partners/whole-foods.png', name: 'Whole Foods Market' },
-        { src: 'assets/partners/sainsburys.png', name: "Sainsbury's" },
-        { src: 'assets/partners/edeka.png', name: 'EDEKA' },
-      ],
-      quotes: [
-        { quote: "We're incredibly happy to work with IPNLF to have access to their expertise as well as being part of the global IPNLF business network, which enables us to expand our reach.", name: 'William Gertler', role: 'Co-Founder, Kumbatia Seafood', org: 'Kumbatia Seafood', logo: null },
-        { quote: 'Our IPNLF Membership underlines our commitment to safeguarding one-by-one tuna fisheries and the communities they support, and we look forward to contributing to the organisation\u2019s essential work in this space.', name: 'Michael Berkowitz', role: 'CEO, Seaford Imports Inc.', org: 'Seaford Imports', logo: null },
-        { quote: "EDEKA's IPNLF membership represents a further step in our commitment to protecting the oceans and fish stocks, and to promoting responsible tuna fishing \u2014 because pole-and-line fishing is one of the most sustainable methods.", name: 'Rolf Lange', role: 'Senior VP, EDEKA Headquarters', org: 'EDEKA', logo: 'assets/partners/edeka.png' },
-      ],
-    };
-  }
-}
-</script>
-<script>
-  document.addEventListener('click', (event) => {
-    const link = event.target.closest('.ipnlf-mobile-panel a');
-    if (link) link.closest('details')?.removeAttribute('open');
-  });
-</script>
 </body>
 </html>
