@@ -27,6 +27,8 @@ A local publication check returned the page, logo and design-system CSS successf
 
 These checks are good evidence that the approach has legs, but they are not a full accessibility audit, cross-browser certification or security assessment.
 
+The search protections discourage indexing; they do not make the page private. Anyone with the URL can open it. If confidential or unapproved material is ever tested, the Netlify site needs access control or password protection as well as `noindex`.
+
 ## CSS and WordPress plugins
 
 The page's CSS links work because its styles and assets are included together in the standalone Netlify deployment. It does **not** inherit the IPNLF WordPress theme automatically. If the WordPress agency changes the main site's fonts, colours, header or spacing, this page will not automatically follow those changes.
@@ -55,4 +57,3 @@ Other controls needed before public use are:
 Create a **separate Netlify branch preview or second Netlify test site** from the improvement branch. This will give us an improved “after” URL while preserving the existing before URL. It should remain blocked from search indexing and should not replace or sit under IPNLF.org until the agency has agreed how the page will integrate.
 
 If approved for production, the preferred integration is for the agency to place the final page within the existing IPNLF site/template. A separate IPNLF subdomain routed to Netlify is a workable alternative, but it creates a second platform that needs its own analytics, consent, accessibility, security and maintenance arrangements.
-
