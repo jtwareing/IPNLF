@@ -1,0 +1,14 @@
+# Source documents and generated design artefacts must not be published or committed.
+*.docx
+*.pptx
+*.pdf
+.thumbnail
+uploads/
+_ds/**/readme.md
+_ds/**/_ds_manifest.json
+_ds/**/_adherence.oxlintrc.json
+
+# Common local files.
+.DS_Store
+Thumbs.db
+*.log
