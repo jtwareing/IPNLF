@@ -107,7 +107,8 @@ h3 { margin-bottom: 12px; font-size: 27px; }
 .partners-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 48px; }
 .partners-row img { width: auto; max-width: 170px; height: 48px; object-fit: contain; filter: grayscale(1); opacity: .58; transition: filter .2s ease, opacity .2s ease; }
 .partners-row img:hover { filter: grayscale(0); opacity: 1; }
-.partners-row span { color: var(--navy); font-family: var(--display); font-size: 38px; text-transform: uppercase; opacity: .58; }
+.partners-row span { color: var(--navy); font-family: var(--display); font-size: 38px; text-transform: uppercase; opacity: .58; transition: color .2s ease, opacity .2s ease; }
+.partners-row span:hover { color: var(--teal); opacity: 1; }
 
 .featured-quote { margin: 50px 0 0; padding: 52px; color: #fff; background: var(--deep); border-radius: 18px; }
 .featured-quote blockquote, .quote-card blockquote { position: relative; }
